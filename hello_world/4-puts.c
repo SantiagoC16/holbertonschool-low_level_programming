@@ -1,8 +1,11 @@
 #include <stdio.h>
-int main()
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ **/
+int main(void)
 {
-   char *myString = "\"Programming is like building a multilingual puzzle"
-     
-     puts(myString); // writing the string to stdout 
+  puts("\"Programming is like building a multilingual puzzle");
    return(0);
 }
