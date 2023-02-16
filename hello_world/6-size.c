@@ -6,13 +6,10 @@
  **/
 int main(void)
 {
-printf("Size of Char Data Types in C = %2d bytes \n", sizeof(char));
-printf("Size of Unsigned char Data Types in C = %2d bytes \n", sizeof(unsigned char));
- printf("Size of Short Data Types in C = %2d bytes \n", sizeof(short));
-printf("Size of Unsigned short Data Types in C = %2d bytes \n", sizeof(unsigned short));
-printf("Size of Int Data Types in C = %2d bytes \n", sizeof(int));
-printf("Size of Unsigned Int Data Types in C = %2d bytes \n", sizeof(unsigned int));
-printf("Size of Long Int Data Types in C = %2d bytes \n", sizeof(long));
-printf("Size of Unsigned long Data Types in C = %2d bytes \n", sizeof(unsigned long));
+printf("Size of char Data Types in C = %ld bytes \n", sizeof(char));
+printf("Size of int Data Types in C = %ld bytes \n", sizeof(int));
+printf("Size of long int Data Types in C = %ld bytes \n", sizeof(long));
+printf("Size of long long int Data Types in C = %ld bytes \n", sizeof(unsigned long));
+printf("Size of float Data Types in C = %ld bytes \n", sizeof(float));
 return (0);
 }
