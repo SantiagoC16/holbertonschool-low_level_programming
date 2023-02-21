@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 /* more headers goes there */
 /* give me a message acording to the number */
 /* betty style doc for function main goes there */
