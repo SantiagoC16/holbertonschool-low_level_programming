@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  * main - Prints a random number and states whether the
  * last digit is and a message acording to that last digit
  * Return: Always 0.
