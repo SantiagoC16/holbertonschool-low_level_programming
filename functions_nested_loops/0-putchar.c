@@ -8,7 +8,7 @@
 
 int main(void)
 {
-int word;
-printf("_putchar", word);
+char msg[100];
+printf("_putchar\n");
 return (0);
 }
