@@ -9,7 +9,7 @@
 
 int main(void)
 {
-char msg[100];
+char [100];
 printf("_putchar\n");
 return (0);
 }
