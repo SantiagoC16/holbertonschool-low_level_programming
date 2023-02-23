@@ -2,12 +2,23 @@
 #include <stdio.h>
 
 /**
- * _abs - Write a function that prints the last digit of a number.
+ * print_last_digit - Write a function that
+ * prints the last digit of a number.
  * @n: an int.
- * Return:the last damage
+ * Return:the last number
  */
 int print_last_digit(int n)
 {
-_putchar (n % 10);
+int j;
+j = n % 10;
+if (j < 0)
+{  
+_putchar (-j + 48);
+return (-j)
+}
+else
+{
+_putchar (j + 48)
 return (n % 10);
+}
 }

@@ -1,0 +1,8 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * _abs - Write a function that prints the last digit of a number.
+ * @n: an int.
+ * Return:the last damage
+ */
