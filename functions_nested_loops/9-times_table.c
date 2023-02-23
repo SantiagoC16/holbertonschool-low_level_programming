@@ -10,7 +10,9 @@ void times_table(void)
 {
 int n;
 int i;
-i = 9;
-for (n = 0; n < 11; n++);
+for (n = 0; n < 10; n++)
+{
+for (i = 0; i < 10; i++)   
 printf("%d * %d = %d \n", n, i, n * i);
+}
 }
