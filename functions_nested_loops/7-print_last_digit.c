@@ -6,7 +6,7 @@
  * @n: an int.
  * Return: the absolute value of the integer.
  */
-int print_last_digit(int
+int print_last_digit(int)
 {
 printf(%d %10);
 
