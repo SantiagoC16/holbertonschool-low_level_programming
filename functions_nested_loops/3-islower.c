@@ -8,9 +8,9 @@
  */
 int _islower(int c)
 {
-if (c >= a && <= z)
+if (c >= 'a' && <= 'z')
 printf(1);
-else (c >= A && <= Z)
+else (c >= 'A' && <= 'Z')
 printf(0);
 return (0);
 }
