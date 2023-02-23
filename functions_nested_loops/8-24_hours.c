@@ -16,7 +16,7 @@ for (b = 0; b < 4; n++)
 {
 for (c = 0; c < 6; n++)
 {
-for (c = 0; d < 10; n++)
+for (d = 0; d < 10; n++)
 {
 _putchar(a + 48);
 _putchar(b + 48);
