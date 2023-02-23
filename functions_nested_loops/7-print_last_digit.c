@@ -4,13 +4,9 @@
 /**
  * _abs - Write a function that prints the last digit of a number.
  * @n: an int.
- * Return: the absolute value of the integer.
+ * Return:the last damage
  */
 int print_last_digit(int n)
 {
-printf(n%10);
-
-
-
-return (0);
+return (n % 10)
 }
