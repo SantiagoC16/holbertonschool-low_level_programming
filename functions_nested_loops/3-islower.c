@@ -10,7 +10,7 @@ int _islower(int c)
 {
 if (c >= 97 && c <= 122)
 printf("%d", 1);
-else (c >= 65 && c <= 90)
+else if (c >= 65 && c <= 90)
 printf("%d", 0);
 return (0);
 }
