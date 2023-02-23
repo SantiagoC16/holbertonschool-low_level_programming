@@ -5,11 +5,13 @@
  * _abs - Write a function that computes the 
  * absolute value of an integer.
  * @n: an int.
- * Return: Always 0.
+ * Return: the absolute value of the integer.
  */
 int _abs(int n)
 {
 int n; 
 if (n < 0)
-return("%d", n*-1)
+return(-n);
+else
+return(n)
 }
