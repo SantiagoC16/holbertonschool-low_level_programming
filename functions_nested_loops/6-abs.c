@@ -4,7 +4,7 @@
 /**
  * _abs - Write a function that computes the 
  * absolute value of an integer.
- * @c: an int.
+ * @n: an int.
  * Return: Always 0.
  */
 int _abs(int n)
