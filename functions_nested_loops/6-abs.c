@@ -11,6 +11,5 @@ int _abs(int n)
 {
 int n; 
 if (n < 0)
-printf("%d", n*-1);
-return (0);
+return("%d", n*-1)
 }
