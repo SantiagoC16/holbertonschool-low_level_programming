@@ -10,5 +10,5 @@ void times_table(void)
 {
 int n;   
 for (n = 1; n < 10; n++);
-xprintf("%d * %d = %d \n", n);
+printf("%d * %d = %d \n", n);
 }
