@@ -8,7 +8,7 @@
  */
 void times_table(void)
 {
-int n   
-for (int n = 1; n < 10; n++)
-printf("%d * %d = %d \n", n)
+int n;   
+for (int n = 1; n < 10; n++);
+xprintf("%d * %d = %d \n", n);
 }
