@@ -7,10 +7,9 @@
  * @c: an int.
  * Return: Always 0.
  */
-int _abs(int)
+int _abs(int n)
 {
-  
-int = x 
+int n; 
 if (n < 0)
 printf(%d*-1);
 return (0);
