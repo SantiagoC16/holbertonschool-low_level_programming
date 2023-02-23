@@ -9,6 +9,6 @@
 void times_table(void)
 {
 int n;   
-for (int n = 1; n < 10; n++);
+for (n = 1; n < 10; n++);
 xprintf("%d * %d = %d \n", n);
 }
