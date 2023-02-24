@@ -8,11 +8,26 @@
  */
 void times_table(void)
 {
-int n;
-int i;
-for (n = 0; n < 10; n++)
-{  
-for (i = 0; i < 10; i++)   
-printf("%d * %d = %d \n", n, i, n * i);
+int a, b, c;
+for (a = 0; a <= 9; a++)
+{
+putchar(48);
+for (b = 1; b <= 9; b++)
+{
+c = a * b;
+_putchar(44);
+_putchar(32);
+if (c <= 9)
+{
+_putchar(32);
+_putchar(c + 48);
+}
+else
+{
+_putchar((c / 10) + 48);
+_putchar((c % 10) + 48);
+}
+}
+_putchar('\n');
 }
 }
