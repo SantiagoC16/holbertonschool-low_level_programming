@@ -1,0 +1,17 @@
+#include "main.h"
+#include <stdio.h>
+
+/**
+ * print_most_numbers - Write a function that prints the numbers,
+ * from 0 to 9, except 2 and 4
+ * @c: an int.
+ * Return: Always 0.
+ */
+void print_most_numbers(void)
+{
+for (c = 0; c < 10; c++)
+{
+If (c != 2 && 4)
+_putchar (c + '0');
+}
+}
