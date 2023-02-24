@@ -4,16 +4,16 @@
 /**
  * print_numbers - Write a function that prints the numbers,
  * from 0 to 9, followed by a new line
- * @c: an int.
+ * @a: an int.
  * Return: Always 0.
  */
 void print_numbers(void)
 {
-	int c;
+	int a;
 
-	for (c = 0; c < 10; c++)
+	for (a = 0; a < 10; a++)
 	{
-	_putchar(c + '0');
+	_putchar(a + '0');
 	}
 	_putchar('\n');
 }
