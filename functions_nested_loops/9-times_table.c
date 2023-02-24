@@ -3,7 +3,7 @@
 
 /**
  * times_table - Write a function that prints the 9 times table.
- * @n, @i: an int.
+ * @n, @i, @a, @b, @c: an int.
  * Return:the last damage
  */
 void times_table(void)
