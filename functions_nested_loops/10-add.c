@@ -10,5 +10,5 @@ int add(int, int)
 {
 int a, b, c;
 c = a * b;
-_putchar(c, '0');
+_putchar(c + '0');
 }
