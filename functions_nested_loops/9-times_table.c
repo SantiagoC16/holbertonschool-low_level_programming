@@ -19,7 +19,7 @@ if (c > 9)
 _putchar((c / 10) + 48);
 _putchar((c % 10) + 48);
 }
-else if (C != 0)
+else if (c != 0)
 {
 _putchar(32 + 48);
 _putchar(c + 48);
@@ -30,8 +30,8 @@ _putchar(c + 48);
 }
 if (b != 9)
 {
-_putchar(44)
-_putchar(32)
+_putchar(44);
+_putchar(32);
 }  
 }
 _putchar('\n');
