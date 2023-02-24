@@ -24,8 +24,6 @@ else
 _putchar((c / 10) + 48);
 _putchar((c % 10) + 48);
 }
-_putchar(44);
-_putchar(32);
 }
 _putchar('\n');
 }
