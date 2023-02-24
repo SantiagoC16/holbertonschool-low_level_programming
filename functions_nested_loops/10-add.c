@@ -3,7 +3,7 @@
 
 /**
  * add - Write a function that prints the 9 times table.
- * @n, @i, @a, @b, @c: an int.
+ * @a, @b, @c: an int.
  * Return:the last damage
  */
 int add(int, int)
