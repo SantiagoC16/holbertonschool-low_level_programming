@@ -9,7 +9,7 @@
 
 int _strlen(char *s)
 {
-char *s[]=null
+char *s[]=null;
 printf("%zu \n", *s);
 return (0);
 }
