@@ -3,8 +3,8 @@
 
 /**
  * _strlen - largo string
- * @s : is a char
- * return : a.
+ * @s:is a char
+ * Return: a.
  */
 
 int _strlen(char *s)
