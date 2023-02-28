@@ -2,18 +2,15 @@
 #include <stdio.h>
 
 /**
- * _strlen - Write a function that returns the length of a string.
+ * _strlen - largo string
  * @s : is a char
  * return : a.
  */
 
 int _strlen(char *s)
-	{
-	int a = 0;
+{
+	int a;
 
-	while (*s + a != '\0')
-	{
-	a++;
-	}
+	a = strlen(s);
 	return (a);
-	}
+}
