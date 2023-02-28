@@ -11,10 +11,9 @@ void _puts(char *str)
 {
 	int a = 0;
 
-	while (*s + a != '\0')
+	while (*str + a != '\0')
 	{
 	a++;
 	puts(str);
 	}
-	return (a);
 }
