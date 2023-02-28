@@ -4,13 +4,16 @@
 /**
  * _strlen - Write a function that returns the length of a string.
  * @s : is a char
- * return : always 0.
+ * return : a.
  */
 
 int _strlen(char *s)
-{
-char *s[]=null;
-printf("%zu \n", *s);
-return (0);
-}
+	{
+	int a = 0;
 
+	while (*s + a != '\0')
+	{
+	a++
+	}
+	return (a);
+	}
