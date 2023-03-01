@@ -9,7 +9,6 @@
 
 void puts_half(char *str)
 {
-int a;
 
 int l = strlen(str);
 int m;
@@ -22,7 +21,7 @@ else
 	m = l / 2;
 	m = m + 1;
 }
-for (a = 0; m < a; m++)
+for (; m < l; m++)
 {
 putchar(str[m]);
 }
