@@ -13,7 +13,7 @@ int a;
 
 int l = strlen(str);
 int m = l / 2;
-for (a = 0; a < m; a++)
+for (a = m; a > m; a--)
 {
 putchar(str[a]);
 }
