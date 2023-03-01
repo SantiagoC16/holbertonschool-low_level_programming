@@ -20,5 +20,5 @@ for (a = 0; a < b; a += 2)
 {
 putchar(str[a]);
 }
-putchar('\0');
+putchar('\n');
 }
