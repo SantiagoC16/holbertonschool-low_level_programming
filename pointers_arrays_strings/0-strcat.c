@@ -14,7 +14,7 @@ int a;
 
 int b = strlen(dest);
 for (a = 0; src[a] != '\0'; a++)
-dest[a] = dest[b + a];
-dest[a] = '\0';
+dest[b] = dest[b + a];
+dest[b] = '\0';
 return (dest);
 }
