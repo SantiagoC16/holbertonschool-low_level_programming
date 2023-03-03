@@ -17,7 +17,7 @@ for (a = 0; dest[a] != '\0'; a++)
 {
 ;
 }
-for (b = 0; b < n && src[b] != '\0'; b++)
+for (b = 0; b < n && src[b] != '\0'; b++, a++)
 {
 dest[a] = src[b];
 }
