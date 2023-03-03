@@ -14,7 +14,10 @@ int a;
 int b;
 
 for (a = 0; a != '\0'; a++)
+{
 b = s1[a] - s2[a];
+break;
+}
 return (b);
 }
 
