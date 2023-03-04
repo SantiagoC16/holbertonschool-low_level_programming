@@ -10,10 +10,14 @@
 
 char *string_toupper(char *a)
 {
+int b;
 
-if (*a >= 97 && *a <= 122)
+for (b = 0; a[b]; b++)
 {
-	a[0] = a[0] - 32;
+	if (*a >= 97 && *a <= 122)
+	{
+		a[b] = a[b] - 32;
+	}
 }
 return (a);
 }
