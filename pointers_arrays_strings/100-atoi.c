@@ -28,5 +28,5 @@ while (*s != '\n')
 	}
 	s++;
 	}
-return (b);
+return (a * b);
 }
