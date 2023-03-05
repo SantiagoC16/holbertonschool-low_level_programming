@@ -28,6 +28,5 @@ while (*s != '\n')
 	}
 	s++;
 	}
-return (s);
+return (b);
 }
-
