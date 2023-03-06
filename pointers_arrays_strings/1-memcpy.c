@@ -15,8 +15,7 @@ unsigned int cont;
 
 for (cont = 0; cont < n; cont++)
 {
-src[cont] = dest[cont];
+dest[cont] = src[cont];
 }
-return (src);
+return (dest);
 }
-
