@@ -33,6 +33,6 @@ for (; s[a] != '\0'; a++)
 		break;
 	}
 }
-return (a);
+return (c);
 }
 
