@@ -13,5 +13,5 @@ int main(int a, char *argv[])
 {
 a = 0;
 printf("%s\n", argv[0]);
-return (i);
+return (a);
 }
