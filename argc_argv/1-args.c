@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * main - Write a program that prints its name
+ * main - Write a program that prints the number of arguments passed into it
  *
  * @argc: is an int
- * @argv: is the name of the file
+ * @b: is
  *
  * Return: 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char *b[])
 {
 	int a;
 
 	for (a = 0; a < argc; a++)
 	{
-	printf("%d\n", atoi(argv[a]));
+	printf("%d\n", atoi(b[a]));
 	}
-	return (a);
+	return (0);
 }
