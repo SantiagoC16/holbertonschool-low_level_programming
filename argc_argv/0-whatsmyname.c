@@ -9,9 +9,9 @@
  * Return: 0
  */
 
-int main(int i, char *argv[])
+int main(int a, char *argv[])
 {
 a = 0;
-printf("%s\n", argv[0])
+printf("%s\n", argv[0]);
 return (i);
 }
