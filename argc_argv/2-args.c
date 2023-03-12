@@ -15,7 +15,7 @@ int main(int argc, char __attribute__ ((unused)) *a[])
 
 	for (b = 0; b < argc; b++)
 	{
-	printf("%s\n", argc)
+	printf("%s\n", a[b]);
 	}
 	return (0);
 }
