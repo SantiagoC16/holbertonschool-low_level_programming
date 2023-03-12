@@ -11,11 +11,6 @@
 
 int main(int argc, char *b[])
 {
-	int a;
-
-	for (a = 0; a < argc; a++)
-	{
-	printf("%d\n", atoi(b[a]));
-	}
+	printf("%d\n", argc);
 	return (0);
 }
