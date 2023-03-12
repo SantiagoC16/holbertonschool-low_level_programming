@@ -13,7 +13,7 @@ int main(int __attribute__ ((unused)) argc, char *a[])
 {
 	int m;
 
-	if (*a[0] < 2)
+	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
