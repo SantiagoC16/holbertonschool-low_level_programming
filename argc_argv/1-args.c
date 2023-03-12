@@ -9,7 +9,7 @@
  * Return: 0
  */
 
-int main(int argc, char *b[])
+int main(int argc, char __attribute__ ((unused)) *b[])
 {
 	printf("%d\n", argc);
 	return (0);
