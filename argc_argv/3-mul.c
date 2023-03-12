@@ -13,7 +13,15 @@ int main(int __attribute__ ((unused)) argc, char *a[])
 {
 	int m;
 
-	m = atoi(a[1]) * atoi(a[2]);
-	printf("%d\n", m);
+	if (*a[0] < 2)
+	{
+		printf("Error\n");
+		return (1);
+	}
+	else
+	{
+		m = atoi(a[1]) * atoi(a[2]);
+		printf("%d\n", m);
+	}
 	return (0);
 }
