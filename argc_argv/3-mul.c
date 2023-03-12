@@ -12,7 +12,7 @@
 int main(int argc, char *a[])
 {
 	int b;
-	int m = 0;
+	int m;
 
 	for (b = 1; b < argc; b++)
 	{
