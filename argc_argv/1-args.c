@@ -15,7 +15,11 @@ int main(int argc, char *b[])
 
 	for (a = 0; a < argc; a++)
 	{
-	printf("%d\n", atoi(b[a]));
+		if (a == '\0')
+		{
+		a = a - 1;
+		}
+		printf("%d\n", atoi(b[a]));
 	}
 	return (0);
 }
