@@ -9,7 +9,7 @@
  * Return: 0
  */
 
-int main(int argc, char __attribute__ ((unused)) *a[])
+int main(int argc, char *a[])
 {
 	int b;
 
