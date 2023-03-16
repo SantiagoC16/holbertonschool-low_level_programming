@@ -16,12 +16,12 @@ int k;
 char *r;
 
 
-if (s1 == NULL && s2 == NULL)
+if (s1 == NULL || s2 == NULL)
 {
 	return (NULL);
 }
 
-else 
+else
 {
 l = strlen(s1);
 k = strlen(s2);
