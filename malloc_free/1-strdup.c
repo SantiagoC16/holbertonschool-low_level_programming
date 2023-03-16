@@ -31,7 +31,7 @@ else
 	}
 	for (copy = 0; copy <= cont; copy++)
 	{
-	p[copy] = str[cont];
+	p[copy] = str[copy];
 	}
 	}
 }
