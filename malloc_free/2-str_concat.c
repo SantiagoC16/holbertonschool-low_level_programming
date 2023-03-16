@@ -13,6 +13,7 @@ char *str_concat(char *s1, char *s2)
 {
 int l;
 int k;
+int c;
 char *r;
 
 
@@ -33,7 +34,10 @@ if (r == NULL)
 
 else
 {
-	strcpy(r, s1);
+	for (c = 0; c <= l; c++)
+	{
+		r[c] = s1[c];
+	}
 	strcat(s1, s2);
 }
 }
