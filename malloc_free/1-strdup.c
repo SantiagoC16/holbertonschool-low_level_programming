@@ -23,7 +23,6 @@ if (str == NULL)
 else
 {
 	for (cont = 0; str[cont]; cont++)
-	{
 	p = malloc(sizeof(char) * cont + 1);
 	if (p == NULL)
 	{
@@ -32,7 +31,6 @@ else
 	for (copy = 0; copy <= cont; copy++)
 	{
 	p[copy] = str[copy];
-	}
 	}
 }
 return (p);
