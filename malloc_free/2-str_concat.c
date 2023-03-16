@@ -21,6 +21,8 @@ if (s1 == NULL && s2 == NULL)
 	return (NULL);
 }
 
+else 
+{
 l = strlen(s1);
 k = strlen(s2);
 r = malloc(sizeof(char) * (l + k + 1));
@@ -34,6 +36,6 @@ else
 	strcpy(r, s1);
 	strcat(s1, s2);
 }
-
+}
 return (r);
 }
