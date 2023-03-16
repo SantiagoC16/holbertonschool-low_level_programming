@@ -11,11 +11,25 @@
 
 char *str_concat(char *s1, char *s2)
 {
+int l;
+int k;
+char *r;
 
 
+if (s1 == NULL && s2 == NULL)
+	return (NULL);
+
+else
+
+l = strlen(s1);
+k = strlen(s2);
+r = malloc(sizeof(char) * (l + k + 1));
+if (r == NULL)
+	return (NULL);
+
+else
+	strcat(s1, s2);
 
 
-
-
-return (0):
+return (r);
 }
