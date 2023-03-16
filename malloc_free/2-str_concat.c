@@ -28,6 +28,7 @@ if (r == NULL)
 	return (NULL);
 
 else
+	strcpy(r, s1);
 	strcat(s1, s2);
 
 
