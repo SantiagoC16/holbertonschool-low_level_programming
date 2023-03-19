@@ -35,7 +35,7 @@ if (r == NULL)
 else
 {
 	strcpy(r, s1);
-	strcat(s1, s2);
+	strcat(r, s2);
 }
 }
 return (r);
