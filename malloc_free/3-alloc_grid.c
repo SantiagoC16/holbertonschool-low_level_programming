@@ -23,7 +23,7 @@ if (width <= 0 || height <= 0)
 
 else
 {
-	g = malloc(sizeof(int) * height);
+	g = malloc(sizeof(int *) * height);
 	if (g == NULL)
 	{
 		free(g);
