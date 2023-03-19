@@ -33,7 +33,7 @@ if (b >= n)
 	b = n;
 }
 
-r = malloc(sizeof(char) * (a + b) + 1);
+r = malloc(sizeof(char) * (a + n) + 1);
 if (r == NULL)
 {
 	free(r);
