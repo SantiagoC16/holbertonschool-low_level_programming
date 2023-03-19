@@ -34,7 +34,11 @@ else
 		g[h] = malloc(sizeof(int) * width);
 		if (g[h] == NULL)
 		{
+		for (h = 0; h < height; h++)
+		{
 			free(g[h]);
+		}
+			free(g);
 			return (NULL);
 		}
 	}
