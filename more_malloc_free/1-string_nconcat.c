@@ -22,10 +22,10 @@ if (s1 == NULL || s2 == NULL)
 	s1 = "";
 	s2 = "";
 }
-for (a = 0; a < s1[a]; a++)
+for (a = 0;s1[a]; a++)
 {
 }
-for (b = 0; b < s2[b]; b++)
+for (b = 0; s2[b]; b++)
 {
 }
 if (b >= n)
