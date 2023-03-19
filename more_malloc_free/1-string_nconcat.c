@@ -47,8 +47,8 @@ else
 	{
 	strcpy(r, s1);
 	strcat(r, s2);
+	r = '\0';
 	}
-r = '\0';
 }
 return (r);
 }
