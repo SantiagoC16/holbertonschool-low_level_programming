@@ -12,11 +12,41 @@
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+unsigned int a;
+unsigned int b;
+unsigned int c;
+char *r;
 
 
-
-
-
-
-
+if (s1 == NULL || s2 == NULL)
+{
+	s1 = "";
+	s2 = "";
+}
+else
+{
+	a = strlen(s1);
+	if (n >= strlen(s2))
+	{
+		b = strlen(s2);
+	}
+	else
+	{
+		for (c = 0; c < n; c++)
+		{
+			b = s2[c];
+		}
+	}
+	r = malloc(sizeof(char) * (a + b + 1));
+	if (r == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+	strcpy(r, s1);
+	strcat(r, s2);
+	}
+}
+return (r);
 }
