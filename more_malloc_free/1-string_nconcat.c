@@ -22,7 +22,7 @@ if (s1 == NULL || s2 == NULL)
 	s1 = "";
 	s2 = "";
 }
-for (a = 0;s1[a]; a++)
+for (a = 0; s1[a]; a++)
 {
 }
 for (b = 0; s2[b]; b++)
