@@ -32,6 +32,6 @@ else
 	{
 	p[copy] = str[copy];
 	}
-}
 return (p);
+}
 }
