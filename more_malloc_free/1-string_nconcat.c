@@ -22,13 +22,11 @@ if (s1 == NULL || s2 == NULL)
 	s1 = "";
 	s2 = "";
 }
-else
+a = strlen(s1);
+if (n >= strlen(s2))
 {
-	a = strlen(s1);
-	if (n >= strlen(s2))
-	{
-		n = strlen(s2);
-	}
+	n = strlen(s2);
+}
 	else
 	{
 		for (b = 0; b < n; b++)
@@ -48,6 +46,5 @@ else
 	strcat(r, s2);
 	r = '\0';
 	}
-}
 return (r);
 }
