@@ -13,8 +13,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int a;
-__attribute__ ((unused)) unsigned int b;
-unsigned int c;
+unsigned int b;
 char *r;
 
 
@@ -28,13 +27,13 @@ else
 	a = strlen(s1);
 	if (n >= strlen(s2))
 	{
-		b = strlen(s2);
+		n = strlen(s2);
 	}
 	else
 	{
-		for (c = 0; c < n; c++)
+		for (b = 0; b < n; b++)
 		{
-			b = s2[c];
+			n = s2[b];
 		}
 	}
 	r = malloc(sizeof(char) * (a + n) + 1);
