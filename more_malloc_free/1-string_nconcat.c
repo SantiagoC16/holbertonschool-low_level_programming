@@ -13,7 +13,7 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 unsigned int a;
-unsigned int b;
+__attribute__ ((unused)) unsigned int b;
 unsigned int c;
 char *r;
 
@@ -37,9 +37,10 @@ else
 			b = s2[c];
 		}
 	}
-	r = malloc(sizeof(char) * (a + b + 1));
+	r = malloc(sizeof(char) * (a + n) + 1);
 	if (r == NULL)
 	{
+		free(r);
 		return (NULL);
 	}
 	else
@@ -47,6 +48,7 @@ else
 	strcpy(r, s1);
 	strcat(r, s2);
 	}
+r = '\0';
 }
 return (r);
 }
