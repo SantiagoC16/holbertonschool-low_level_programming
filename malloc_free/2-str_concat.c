@@ -18,7 +18,8 @@ char *r;
 
 if (s1 == NULL || s2 == NULL)
 {
-	return (NULL);
+	s1 = "";
+	s2 = "";
 }
 
 else
