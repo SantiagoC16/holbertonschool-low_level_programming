@@ -4,12 +4,12 @@
 #endif
 
 /**
- * _printfilename: print the name of the file it compiles
+ * main - print the name of the file it compiles
  *
  * Return: 0
  */
 
-void _printfilename(void)
+int main(void)
 {
-printf(__FILE__);
+printf("%s\n", __FILE__);
 }
