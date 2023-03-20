@@ -9,23 +9,14 @@
 
 int _abs(int x)
 {
-int c;
 
-if (x >= 0)
+if (x < 0)
 {
-	for (c = 0; c >= x; c++)
-	{
-		c = x;
-		printf("%d", c);
-	}
+	return (-x);
 }
 else
 {
-	for (c = 0; c < x; c--)
-	{
-		c = x * -1;
-		printf("%d", c);
-	}
+	return (x);
 }
 return (0);
 }
