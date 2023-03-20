@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * abs - print the absolute value of the number
- * @n: is an int
+ * _abs - print the absolute value of the number
+ * @x: is an int
  *
  * Return: 0
  */
 
 int _abs(int x)
 {
-
 if (x < 0)
 {
 	return (-x);
