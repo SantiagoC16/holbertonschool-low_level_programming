@@ -1,5 +1,5 @@
 #include "dog.h"
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * init_dog - Write a function that initialize a variable of type
@@ -11,7 +11,7 @@
 
 void print_dog(struct dog *d)
 {
-if (d->owner == NULL || d->age  == NULL)
+if (d->owner == NULL)
 {
 	printf("(nil)");
 }
@@ -19,8 +19,12 @@ if (d->name == NULL)
 {
 	printf("Name: (nil)");
 }
+if (d->age <= 0)
+{
+	printf("(nil)");
+}
 if (d == NULL)
 {
-	return (1);
+	return;
 }
 }
