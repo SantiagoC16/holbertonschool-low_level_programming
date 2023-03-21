@@ -1,5 +1,5 @@
 #include "dog.h"
-#include "main.h"
+#include <stdio.h>
 
 /**
  * init_dog - Write a function that initialize a variable of type
