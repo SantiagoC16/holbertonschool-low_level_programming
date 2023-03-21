@@ -1,3 +1,4 @@
+
 struct dog
 {
 	float age;
