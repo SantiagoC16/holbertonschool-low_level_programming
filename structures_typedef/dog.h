@@ -1,5 +1,11 @@
-#ifndef _dog
-#define _dog
+#ifndef dogh
+#define dogh
+
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+#include <time.h>
+#include <math.h>
 
 /**
  * struct dog - an estructure
@@ -20,5 +26,7 @@ struct dog
 };
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+
 
 #endif

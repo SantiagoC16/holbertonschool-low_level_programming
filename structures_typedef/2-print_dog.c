@@ -1,9 +1,9 @@
 #include "dog.h"
-#include "main.h"
+
 
 /**
- * init_dog - Write a function that initialize a variable of type
- * struct dog
+ * print_dog - print the dog struct
+ *
  *
  * @d: is a struct
  *
@@ -25,6 +25,9 @@ if (d->age <= 0)
 }
 if (d == NULL)
 {
-	return;
+	printf("");
 }
+prinft("Name: %s\n", d->name);
+printf("Age: %f\n", d->age);
+printf("Owner: %s\n", d->owner);
 }
