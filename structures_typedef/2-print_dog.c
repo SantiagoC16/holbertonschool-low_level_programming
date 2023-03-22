@@ -30,7 +30,7 @@ if (d != NULL)
 	}
 	else
 	{
-		printf("(nil)\n");
+		printf("Owner: (nil)\n");
 	}
 }
 }
