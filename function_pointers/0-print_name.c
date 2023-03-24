@@ -1,7 +1,7 @@
-#include "main.h"
+#include "function_pointers.h"
 
 /**
- * print_name - print the char *name
+ * print_name - print name
  *
  * @name: is a char
  * @f: is a reference
