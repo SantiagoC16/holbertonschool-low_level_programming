@@ -26,11 +26,11 @@ for (cont = 0; cont < n; cont++)
 	string = va_arg(args, char *);
 	if (string == NULL)
 	{
-		printf("(nil)\n");
+		printf("(nil)");
 	}
 	else
 	{
-		printf("%s\n", string);
+		printf("%s", string);
 		if (cont != (n - 1))
 		{
 			printf("%s", separator);
