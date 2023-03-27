@@ -21,7 +21,7 @@ va_start(args, n);
 	{
 		return;
 	}
-for (cont = 0; n < cont; cont++)
+for (cont = 0; cont < n; cont++)
 {
 	string = va_arg(args, char *);
 	if (string == NULL)
