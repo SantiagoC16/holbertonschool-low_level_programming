@@ -17,10 +17,10 @@ char *string;
 
 va_start(args, n);
 
-if (separator == NULL)
-{
-	return;
-}
+	if (separator == NULL)
+	{
+		return;
+	}
 for (cont = 0; n < cont; cont++)
 {
 	string = va_arg(args, char *);
