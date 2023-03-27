@@ -17,10 +17,6 @@ char *string;
 
 va_start(args, n);
 
-	if (separator == NULL)
-	{
-		return;
-	}
 for (cont = 0; cont < n; cont++)
 {
 	string = va_arg(args, char *);
@@ -31,7 +27,7 @@ for (cont = 0; cont < n; cont++)
 	else
 	{
 		printf("%s", string);
-		if (cont != (n - 1))
+		if (separator != NULL && cont != (n - 1))
 		{
 			printf("%s", separator);
 		}
