@@ -11,6 +11,7 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	int lenght = 0;
 	list_t *recorrer;
+	list_t *temp;
 
 	recorrer = malloc(sizeof(list_t));
 	if (recorrer == NULL)
@@ -24,9 +25,9 @@ list_t *add_node_end(list_t **head, const char *str)
 	}
 
 	lenght = strlen(str);
-	recorrer->str = strdup(str);
-	recorrer->len = lenght;
-	recorrer->next = *head;
-	*head = recorrer;
+	temp->str = strdup(str);
+	temp->len = lenght;
+	temp->next = *recorrer;
+	*recorrer = temp;
 	return (temp);
 }
