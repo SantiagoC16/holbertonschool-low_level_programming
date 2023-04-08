@@ -12,16 +12,17 @@ list_t *add_node_end(list_t **head, const char *str)
 	int lenght = 0;
 	list_t *recorrer;
 
+	recorrer = malloc(sizeof(list_t));
+	if (recorrer == NULL)
+	{
+		return (NULL);
+	}
+
 	while (recorrer != NULL && recorrer->next != NULL)
 	{
 		recorrer = recorrer->next;
 	}
 
-	temp = malloc(sizeof(list_t));
-	if (temp == NULL)
-	{
-		return (NULL);
-	}
 	lenght = strlen(str);
 	recorrer->str = strdup(str);
 	recorrer->len = lenght;
