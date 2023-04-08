@@ -9,7 +9,6 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *temp;
 	int lenght = 0;
 	list_t *recorrer;
 
@@ -24,9 +23,9 @@ list_t *add_node_end(list_t **head, const char *str)
 		return (NULL);
 	}
 	lenght = strlen(str);
-	temp->str = strdup(str);
-	temp->len = lenght;
-	temp->next = *head;
+	recorrer->str = strdup(str);
+	recorrer->len = lenght;
+	recorrer->next = *head;
 	*head = recorrer;
 	return (temp);
 }
