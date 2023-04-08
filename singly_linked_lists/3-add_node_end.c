@@ -1,24 +1,6 @@
 #include "lists.h"
 
 /**
- * recorrer - recorre los nodos hasta llegar al ultimo
- * @h: pointer to struct
- * Return: the last node
- */
-
-size_t recorre(const list_t *h)
-{
-	list_t *recorre = h;
-
-	while (recorre != NULL && recorre->next != NULL)
-	{
-		recorre = recorre->next;
-	}
-	return (recorre);
-}
-
-
-/**
  * add_node_end - adds a new node at the end of a list_t list
  * @str: a pointer
  * @head: pointer to pointer
@@ -29,8 +11,12 @@ list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *temp;
 	int lenght = 0;
+	list_t *recorrer;
 
-
+	while (recorrer != NULL && recorrer->next != NULL)
+	{
+		recorrer = recorrer->next;
+	}
 
 	temp = malloc(sizeof(list_t));
 	if (temp == NULL)
@@ -41,6 +27,6 @@ list_t *add_node_end(list_t **head, const char *str)
 	temp->str = strdup(str);
 	temp->len = lenght;
 	temp->next = *head;
-	*head = temp;
+	*head = recorrer;
 	return (temp);
 }
