@@ -10,24 +10,24 @@
 list_t *add_node_end(list_t **head, const char *str)
 {
 	int lenght = 0;
-	list_t *recorrer;
+	list_t *last;
 	list_t *temp;
 
-	recorrer = malloc(sizeof(list_t));
-	if (recorrer == NULL)
+	last = malloc(sizeof(list_t));
+	if (last == NULL)
 	{
 		return (NULL);
 	}
-
-	while (recorrer != NULL && recorrer->next != NULL)
-	{
-		recorrer = recorrer->next;
-	}
-
 	lenght = strlen(str);
-	temp->str = strdup(str);
-	temp->len = lenght;
-	temp->next = *recorrer;
-	*recorrer = temp;
+	last->str = strdup(str);
+	last->len = lenght;
+	last->next = NULL;
+
+	temp = *head;
+	while (temp->next != NULL)
+	{
+		temp = temp->next;
+	}
+	temp->next = last;
 	return (temp);
 }
