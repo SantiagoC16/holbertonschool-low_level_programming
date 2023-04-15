@@ -16,7 +16,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	a = fopen(filename, "r+");
+	a = fopen(filename, "a");
 	if (text_content != NULL)
 	{
 		fprintf(a, "%s", text_content);
