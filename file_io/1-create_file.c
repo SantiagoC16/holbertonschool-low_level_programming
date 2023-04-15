@@ -11,11 +11,11 @@ int create_file(const char *filename, char *text_content)
 {
 	FILE *c;
 
-	c = fopen(filename, "w");
 	if (filename == NULL)
 	{
 		return (-1);
 	}
+	c = fopen(filename, "w");
 	if (text_content != NULL)
 	{
 		fprintf(c, "%s", text_content);
