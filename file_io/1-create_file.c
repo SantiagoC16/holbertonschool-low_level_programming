@@ -11,7 +11,7 @@ int create_file(const char *filename, char *text_content)
 {
 	FILE *c;
 
-	if (filename == NULL)
+	if (filename == NULL || access(filename, R_OK | W_OK) == -1)
 	{
 		return (-1);
 	}
