@@ -9,9 +9,36 @@
 
 int append_text_to_file(const char *filename, char *text_content)
 {
+	FILE *a;
+	char c;
 
+	if (filename == NULL)
+	{
+		return (-1);
+	}
+	a = fopen(filename, "r+");
+	if (text_content != NULL)
+	{
+		fprintf(a, "%s", text_content);
+		fseek(a, 0, SEEK_SET);
+		while ((c = fgetc(a)) != EOF)
+		{
+			putchar (c);
+			if (filename != NULL)
+			{
+				return (1);
+			}
+			else
+			{
+				return (-1);
+			}
+		}
+	}
 
-
-
-	return (0);
+	else
+	{
+		ssize_t read_textfile(const char *filename, size_t letters);
+	}
+	fclose(a);
+	return (1);
 }
