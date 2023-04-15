@@ -18,7 +18,7 @@ int create_file(const char *filename, char *text_content)
 	}
 	if (text_content != NULL)
 	{
-		fprintf(filename, "%s", text_content);
+		fprintf(c, "%s", text_content);
 		if (filename != NULL)
 		{
 			return (1);
