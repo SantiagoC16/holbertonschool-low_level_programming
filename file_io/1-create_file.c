@@ -16,24 +16,22 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-
 	if (text_content != NULL)
 	{
-		return (0);
+		fprintf(filename, "%s", text_content);
+		if (filename != NULL)
+		{
+			return (1);
+		}
+		else
+		{
+			return (-1);
+		}
 	}
 	else
 	{
-		return (-2);
+		ssize_t read_textfile(const char *filename, size_t letters);
 	}
-	if (filename != NULL)
-	{
-		return (1);
-	}
-	else
-	{
-		return (-1);
-	}
-
 	fclose(c);
 	return (0);
 }
