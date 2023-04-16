@@ -11,21 +11,24 @@
 
 int main(int argc, char *a[])
 {
-int i;
+int i, j;
 int s;
 
 for (i = 0; i < argc; i++)
 {
-if (i >= 48 && i >= 57)
-{
-	s = s + atoi(a[i]);
-	printf("%d\n", s);
-}
-if (i < 48 || i > 57)
-{
-	printf("Error\n");
-	return (1);
-}
+	for (j = 0; j < argc; j++)
+	{
+		if (a[i][j] < 48 || a[i][j] > 57)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		if (a[i][j] >= 48 && a[i][j] <= 57)
+		{
+			s = s + atoi(a[i][j]);
+			printf("%d\n", s);
+		}
+	}
 }
 return (0);
 }
