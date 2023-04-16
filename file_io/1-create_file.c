@@ -15,10 +15,6 @@ int create_file(const char *filename, char *text_content)
 	{
 		return (-1);
 	}
-	if (access(filename, R_OK) == -1)
-	{
-		return (-1);
-	}
 	c = fopen(filename, "w");
 	if (text_content != NULL)
 	{
