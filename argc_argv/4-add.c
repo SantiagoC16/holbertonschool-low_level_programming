@@ -23,10 +23,7 @@ int main(int argc, char *a[])
 				printf("Error\n");
 				return (1);
 			}
-			if (a[i][j] >= 48 && a[i][j] <= 57)
-			{
-				s = s + atoi(&a[i][j]);
-			}
+			s += atoi(a[i]);
 		}
 	}
 	printf("%d\n", s);
