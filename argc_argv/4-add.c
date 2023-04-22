@@ -23,8 +23,8 @@ int main(int argc, char *a[])
 				printf("Error\n");
 				return (1);
 			}
-			s += atoi(a[i]);
 		}
+		s += atoi(a[i]);
 	}
 	printf("%d\n", s);
 	return (0);
