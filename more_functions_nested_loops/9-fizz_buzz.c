@@ -1,10 +1,20 @@
 #include "main.h"
 
 /**
- * fizz - fizz
+ * main - fizz
  * Return: 0
  */
 
+int main(void)
+{
+	fizz();
+	return (0);
+}
+
+/**
+ * fizz - fizz
+ * Return: 0
+ */
 void fizz(void)
 {
 	int a;
