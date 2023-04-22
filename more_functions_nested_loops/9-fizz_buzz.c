@@ -7,16 +7,6 @@
 
 int main(void)
 {
-	fizz();
-	return (0);
-}
-
-/**
- * fizz - fizz
- * Return: 0
- */
-void fizz(void)
-{
 	int a;
 
 	for (a = 1; a < 101; a++)
@@ -37,6 +27,7 @@ void fizz(void)
 		{
 			printf("%d ", a);
 		}
-		putchar('\n');
 	}
+	putchar('\n');
+	return (0);
 }
