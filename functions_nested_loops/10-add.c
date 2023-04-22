@@ -1,14 +1,12 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * add - Write a function that prints the 9 times table.
- * @a, @b, @c: an int.
- * Return:the last damage
+ * @a: an int
+ * @b: an int.
+ * Return:the result
  */
-int add(int, int)
+int add(int a, int b)
 {
-int a, b, c;
-c = a * b;
-_putchar(c + '0');
+	return (a + b);
 }
