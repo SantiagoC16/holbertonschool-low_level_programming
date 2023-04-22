@@ -11,12 +11,10 @@
 
 int main(int argc, char *a[])
 {
-int i, j;
-int s = 0;
+	int i, j;
+	int s = 0;
 
-for (i = 0; i < argc; i++)
-{
-	for (j = 0; j < argc; j++)
+	for (i = 0; i < argc; i++)
 	{
 		for (j = 0; a[i][j] != '\0'; j++)
 		{
@@ -31,7 +29,6 @@ for (i = 0; i < argc; i++)
 			}
 		}
 	}
-}
-printf("%d\n", s);
-return (0);
+	printf("%d\n", s);
+	return (0);
 }
