@@ -37,6 +37,6 @@ void fizz(void)
 		{
 			printf("%d ", a);
 		}
-		_putchar('\n');
+		putchar('\n');
 	}
 }
