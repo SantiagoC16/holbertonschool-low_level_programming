@@ -18,11 +18,12 @@ int c = 0;
 
 for (a = 0; haystack[a] != '\0'; a++)
 {
-	for (b = 0; needle[b] != '\0'; b++)
+	c = a;
+	for (b = 0; needle[b] != '\0' && haystack[c] == needle[b]; b++, c++)
 	{
-		if (haystack[a] == needle[b])
+		if (needle[b] == '\0')
 		{
-			c++;
+			return (&haystack[a]);
 		}
 	}
 }
