@@ -16,10 +16,12 @@ int a;
 int b;
 int c = 0;
 
+if (needle[0] == '\0')
+	return (haystack);
 for (a = 0; haystack[a] != '\0'; a++)
 {
 	c = a;
-	for (b = 0; needle[b] != '\0' && haystack[c] == needle[b]; b++, c++)
+	for (b = 0; needle[b] == haystack[c]; b++, c++)
 	{
 		if (needle[b] == '\0')
 		{
