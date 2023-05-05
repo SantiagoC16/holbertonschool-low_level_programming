@@ -76,18 +76,19 @@ void print_all(const char *const format, ...)
     while (format != NULL && format[cont] != '\0')
     {
         while(keys[cont2].f)
-		{
-			if (format[cont2] == keys[cont2].type[0])
-			{
-				printf("%s", sep);
-				keys[cont2].f(ex4);
-				sep = sep2;
-			}
-			cont2++;
-		}
-		cont++;
-	}
+        {
+            if (format[cont] == *(keys[cont2].type))
+            {
+                printf("%s", sep);
+                keys[cont2].f(ex4);
+                sep = sep2;
+            }
+            cont2++;
+        }
+        cont++;
+        cont2 = 0;
+    }
 
-	printf("\n");
-	va_end(ex4);
+    printf("\n");
+    va_end(ex4);
 }
