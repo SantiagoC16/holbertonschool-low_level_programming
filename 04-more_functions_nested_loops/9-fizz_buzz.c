@@ -23,7 +23,7 @@ int main(void)
 			}
 			else
 			{
-			printf("Buzz ");
+				printf("Buzz ");
 			}
 		}
 		else if (a % 3 == 0 && a % 5 == 0)
