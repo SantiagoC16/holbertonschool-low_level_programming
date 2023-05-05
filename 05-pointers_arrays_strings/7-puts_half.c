@@ -10,22 +10,22 @@
 void puts_half(char *str)
 {
 
-int l = strlen(str);
-int m;
-if (l % 2 != 0)
-{
-	m = ((l - 1) / 2);
-	m = m + 1;
-}
-else
-{
-	m = l / 2;
-}
-for (; m < l; m++)
-{
-putchar(str[m]);
-}
-{
-putchar('\n');
-}
+	int l = strlen(str);
+	int m;
+	if (l % 2 != 0)
+	{
+		m = ((l - 1) / 2);
+		m = m + 1;
+	}
+	else
+	{
+		m = l / 2;
+	}
+	for (; m < l; m++)
+	{
+		putchar(str[m]);
+	}
+	{
+		putchar('\n');
+	}
 }

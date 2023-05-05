@@ -11,16 +11,16 @@
 char *_strchr(char *s, char c)
 {
 
-for (; *s != '\0'; s++)
-{
-if (*s == c)
-{
-	break;
-}
-}
-if (*s != c)
-{
-	return (NULL);
-}
-return (s);
+	for (; *s != '\0'; s++)
+	{
+		if (*s == c)
+		{
+			break;
+		}
+	}
+	if (*s != c)
+	{
+		return (NULL);
+	}
+	return (s);
 }

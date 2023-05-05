@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 
-
 /**
  * _strstr - Write a function that locates a substring
  * @haystack: is a pointer
@@ -9,26 +8,24 @@
  * Return: always
  */
 
-
 char *_strstr(char *haystack, char *needle)
 {
-int a;
-int b;
-int c = 0;
+	int a;
+	int b;
+	int c = 0;
 
-if (needle[0] == '\0')
-	return (haystack);
-for (a = 0; haystack[a] != '\0'; a++)
-{
-	c = a;
-	for (b = 0; needle[b] == haystack[c]; b++, c++)
+	if (needle[0] == '\0')
+		return (haystack);
+	for (a = 0; haystack[a] != '\0'; a++)
 	{
-		if (needle[b] == '\0')
+		c = a;
+		for (b = 0; needle[b] == haystack[c]; b++, c++)
 		{
-			return (&haystack[a]);
+			if (needle[b] == '\0')
+			{
+				return (&haystack[a]);
+			}
 		}
 	}
+	return (NULL);
 }
-return (NULL);
-}
-

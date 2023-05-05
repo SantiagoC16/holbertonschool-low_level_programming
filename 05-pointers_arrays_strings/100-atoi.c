@@ -9,24 +9,24 @@
 
 int _atoi(char *s)
 {
-unsigned int a = 0;
-int b = 1;
+	unsigned int a = 0;
+	int b = 1;
 
-while (*s != '\n')
-{
-	if (*s == '-')
+	while (*s != '\n')
 	{
-		b = b * -1;
+		if (*s == '-')
+		{
+			b = b * -1;
+		}
+		else if (*s >= 48 && *s <= 57)
+		{
+			a = a * 10 + (*s - '0');
+		}
+		else if (a > 0)
+		{
+			break;
+		}
+		s++;
 	}
-	else if (*s >= 48 && *s <= 57)
-	{
-		a = a * 10 + (*s - '0');
-	}
-	else if (a > 0)
-	{
-		break;
-	}
-	s++;
-	}
-return (a * b);
+	return (a * b);
 }
