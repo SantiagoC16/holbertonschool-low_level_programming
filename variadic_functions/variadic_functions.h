@@ -23,7 +23,7 @@ void print_all(const char * const format, ...);
 typedef struct print
 {
 	char *type;
-	int (*f)(va_list types);
+	int (*f)(va_list ex4);
 } print_t;
 
 
