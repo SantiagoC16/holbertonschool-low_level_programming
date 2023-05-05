@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * add - Write a function that prints the 9 times table.
+ * add - Write a function that return the result of 2 ints
  * @a: an int
  * @b: an int.
  * Return:the result

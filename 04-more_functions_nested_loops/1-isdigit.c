@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * _isdigit - Write a function that checks for lowercase character.
+ * _isdigit - Write a function that checks for number.
  * @c: an int.
  * Return: Always 0.
  */
