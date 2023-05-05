@@ -19,7 +19,7 @@ void characters(va_list ex4)
  * @ex4: va_list
  * Return: 0
  */
-void floatx(va_list ex4);
+void floatx(va_list ex4)
 {
 	double f;
 
@@ -33,7 +33,7 @@ void floatx(va_list ex4);
  * Return: 0
  */
 
-void strings(va_list ex4);
+void strings(va_list ex4)
 {
 	char *s;
 
@@ -47,7 +47,7 @@ void strings(va_list ex4);
  * @ex4: va_list
  * Return: 0
  */
-void numbers(va_list ex4);
+void numbers(va_list ex4)
 {
 	int i;
 
