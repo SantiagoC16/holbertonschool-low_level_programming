@@ -62,8 +62,8 @@ void numbers(va_list ex4)
 void print_all(const char *const format, ...)
 {
     va_list ex4;
-    int cont = 0, cont2 = 0;
-    char *sep = "", *sep2 = ", ";
+    int i = 0, a;
+    char *separator = "", *separator2 = ", ";
     print_t keys[] = {
         {"c", characters},
         {"s", strings},
@@ -73,22 +73,21 @@ void print_all(const char *const format, ...)
     };
 
     va_start(ex4, format);
-    while (format != NULL && format[cont] != '\0')
+    while (format != NULL && format[i] != '\0')
     {
-        while(keys[cont2].f)
+		a = 0;
+        while(keys[a].type)
         {
-            if (format[cont] == *(keys[cont2].type))
+            if (format[i] == keys[a].type[0])
             {
-                printf("%s", sep);
-                keys[cont2].f(ex4);
-                sep = sep2;
+                printf("%s", separator);
+                keys[a].f(ex4);
+                separator = separator2;
             }
-            cont2++;
+            a++;
         }
-        cont++;
-        cont2 = 0;
+        i++;
     }
-
     printf("\n");
     va_end(ex4);
 }
