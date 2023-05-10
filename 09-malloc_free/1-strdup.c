@@ -11,31 +11,32 @@
 
 char *_strdup(char *str)
 {
-char *p;
-int cont;
-int copy;
+	char *p;
+	int cont;
+	int copy;
 
-if (str == NULL)
-{
-	return (NULL);
-}
-
-else
-{
-	for (cont = 0; str[cont]; cont++)
-	{}
-	p = malloc(sizeof(char) * cont + 1);
-	if (p == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
+
 	else
 	{
-		for (copy = 0; copy <= cont; copy++)
+		for (cont = 0; str[cont]; cont++)
 		{
-			p[copy] = str[copy];
 		}
+		p = malloc(sizeof(char) * cont + 1);
+		if (p == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			for (copy = 0; copy <= cont; copy++)
+			{
+				p[copy] = str[copy];
+			}
+		}
+		return (p);
 	}
-	return (p);
-}
 }
