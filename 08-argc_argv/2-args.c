@@ -15,7 +15,7 @@ int main(int argc, char *a[])
 
 	for (b = 0; b < argc; b++)
 	{
-	printf("%s\n", a[b]);
+		printf("%s\n", a[b]);
 	}
 	return (0);
 }
