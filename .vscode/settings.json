@@ -3,6 +3,7 @@
         "stdarg.h": "c",
         "math.h": "c",
         "stdio.h": "c",
-        "main.h": "c"
+        "main.h": "c",
+        "binary_trees.h": "c"
     }
 }
