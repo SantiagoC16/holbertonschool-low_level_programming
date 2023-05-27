@@ -11,5 +11,16 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	return ();
+	size_t half = size / 2, search;
+
+	if (array == NULL || !value)
+		return (-1);
+
+	for (search = 0; search < half; search++)
+	{
+		printf("Value checked array[%ld] = [%u]\n", search, array[search]);
+		if (array[search] == value)
+			return (search);
+	}
+	return (-1);
 }
