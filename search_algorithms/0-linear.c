@@ -18,7 +18,7 @@ int linear_search(int *array, size_t size, int value)
 
 	for (search = 0; search < size; search++)
 	{
-		printf("Value checked array[%ld] = [%u]\n", search, array[search]);
+		printf("Value checked array[%ld] = [%d]\n", search, array[search]);
 		if (array[search] == value)
 			return (search);
 	}
