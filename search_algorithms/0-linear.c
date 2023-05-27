@@ -20,7 +20,7 @@ int linear_search(int *array, size_t size, int value)
 	{
 		if (array[search] == value)
 		{
-			printf("Found at index: %d\n", linear_search(array, size, value));
+			printf("Found at index: %zu\n", search);
 			return (search);
 		}
 	}
