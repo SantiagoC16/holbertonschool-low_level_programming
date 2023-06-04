@@ -1,7 +1,7 @@
 #include "dog.h"
 
 /**
- * new_dog - Write a function that frees dogs
+ * free_dog - Write a function that frees dogs
  *
  * @d: pointer to the dog data
  *
@@ -10,8 +10,10 @@
 
 void free_dog(dog_t *d)
 {
-	if (d)
+	if (d == NULL)
+	{
 		return;
+	}
 	else
 	{
 		free(d->name);
